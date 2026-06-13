@@ -3,11 +3,11 @@ OpenClaw 移动端 AI 助手 —— 性能报告
 
 测试环境
 --------
-操作系统：Windows 10
-Node.js 版本：v24.15.0
-OpenClaw 版本：2026.5.7
+操作系统：Android (天玑9500 工程机) + Termux
+Node.js 版本：v26.2.0
+OpenClaw 版本：2026.6.1
 API 服务：百度星河社区 https://aistudio.baidu.com/llm/lmapi/v3
-模型：ernie-3.5-8k
+模型：ernie-4.5-turbo-32k (文心大模型 ERNIE-4.5 系列)
 
 性能数据
 --------
@@ -21,5 +21,4 @@ API 响应延迟：
   - 文件操作：成功
   - 信息查询：成功
   - 日程提醒：成功
-
 测试日期：2026年5月15日
