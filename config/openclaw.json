@@ -1,30 +1,22 @@
 {
   "gateway": {
-    "auth": {
-      "mode": "token",
-      "token": "my-openclaw-token"
-    },
     "mode": "local",
     "port": 18789
-  },
-  "meta": {
-    "lastTouchedVersion": "2026.5.7",
-    "lastTouchedAt": "2026-05-14T11:24:43.930Z"
   },
   "models": {
     "providers": {
       "openai": {
         "baseUrl": "https://aistudio.baidu.com/llm/lmapi/v3",
-        "apiKey": "2242471b8780bd6f1cfeb0ff930a67b3b939b507",
+        "apiKey": "你的星河Access Token",
         "api": "openai-completions",
         "models": [
           {
-            "id": "ernie-3.5-8k",
-            "name": "ernie-3.5-8k",
+            "id": "ernie-4.5-turbo-32k",
+            "name": "ERNIE-4.5-Turbo-32K",
             "reasoning": false,
             "input": ["text"],
-            "contextWindow": 128000,
-            "maxTokens":2048
+            "contextWindow": 32768,
+            "maxTokens": 2048
           }
         ]
       }
@@ -32,70 +24,7 @@
   },
   "agents": {
     "defaults": {
-      "model": "openai/ernie-3.5-8k"
-    }
-  },
-  "skills": {
-    "entries": {
-      "1password": { "enabled": false },
-      "apple-notes": { "enabled": false },
-      "apple-reminders": { "enabled": false },
-      "bear-notes": { "enabled": false },
-      "blogwatcher": { "enabled": false },
-      "blucli": { "enabled": false },
-      "bluebubbles": { "enabled": false },
-      "camsnap": { "enabled": false },
-      "clawhub": { "enabled": false },
-      "coding-agent": { "enabled": false },
-      "discord": { "enabled": false },
-      "eightctl": { "enabled": false },
-      "gemini": { "enabled": false },
-      "gh-issues": { "enabled": false },
-      "gifgrep": { "enabled": false },
-      "github": { "enabled": false },
-      "gog": { "enabled": false },
-      "goplaces": { "enabled": false },
-      "himalaya": { "enabled": false },
-      "imsg": { "enabled": false },
-      "mcporter": { "enabled": false },
-      "model-usage": { "enabled": false },
-      "nano-pdf": { "enabled": false },
-      "notion": { "enabled": false },
-      "obsidian": { "enabled": false },
-      "openai-whisper": { "enabled": false },
-      "openai-whisper-api": { "enabled": false },
-      "openhue": { "enabled": false },
-      "oracle": { "enabled": false },
-      "ordercli": { "enabled": false },
-      "peekaboo": { "enabled": false },
-      "sag": { "enabled": false },
-      "session-logs": { "enabled": false },
-      "sherpa-onnx-tts": { "enabled": false },
-      "slack": { "enabled": false },
-      "songsee": { "enabled": false },
-      "sonoscli": { "enabled": false },
-      "spotify-player": { "enabled": false },
-      "summarize": { "enabled": false },
-      "things-mac": { "enabled": false },
-      "tmux": { "enabled": false },
-      "trello": { "enabled": false },
-      "video-frames": { "enabled": false },
-      "voice-call": { "enabled": false },
-      "wacli": { "enabled": false },
-      "xurl": { "enabled": false }
-    }
-  },
-  "wizard": {
-    "lastRunAt": "2026-05-13T11:07:38.266Z",
-    "lastRunVersion": "2026.5.7",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
-  },
-  "plugins": {
-    "entries": {
-      "openai": {
-        "enabled": true
-      }
+      "model": "openai/ernie-4.5-turbo-32k"
     }
   }
 }
